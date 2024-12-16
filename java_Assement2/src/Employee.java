@@ -1,4 +1,3 @@
-// 文件路径: src/Employee.java
 public class Employee extends Person {
     private String employeeId;
     private String department;
@@ -13,7 +12,6 @@ public class Employee extends Person {
         this.department = department;
     }
 
-    // Getters and Setters
     public String getEmployeeId() {
         return employeeId;
     }
