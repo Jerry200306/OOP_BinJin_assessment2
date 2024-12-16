@@ -1,11 +1,11 @@
-// 文件路径: src/Person.java
+
 public abstract class Person {
     private String name;
     private int age;
     private String id;
 
     public Person() {
-        // 抽象类不能被实例化，因此可以留空或者抛出异常
+
     }
 
     public Person(String name, int age, String id) {
