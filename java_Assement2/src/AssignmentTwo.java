@@ -1,12 +1,42 @@
-
+import java.util.Scanner;
 public class AssignmentTwo {
     public static void main(String[] args) {
-        partThree();
-        partFourA();
-        partFourB();
-        partFive();
-        partSix();
-        partSeven();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter a number to select the method to run:");
+        System.out.println("1 - Run partThree()");
+        System.out.println("2 - Run partFourA()");
+        System.out.println("3 - Run partFourB()");
+        System.out.println("4 - Run partFive()");
+        System.out.println("5 - Run partSix()");
+        System.out.println("6 - Run partSeven()");
+        System.out.print("选择：");
+        int choice = scanner.nextInt();
+
+        switch (choice) {
+            case 1:
+                partThree();
+                break;
+            case 2:
+                partFourA();
+                break;
+            case 3:
+                partFourB();
+                break;
+            case 4:
+                partFive();
+                break;
+            case 5:
+                partSix();
+                break;
+            case 6:
+                partSeven();
+                break;
+            default:
+                System.out.println("Invalid input！");
+                break;
+        }
+
+        scanner.close();
     }
 
     public static void partThree() {
