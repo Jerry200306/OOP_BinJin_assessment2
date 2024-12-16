@@ -1,4 +1,4 @@
-// 文件路径: src/RideInterface.java
+
 public interface RideInterface {
     void addVisitorToQueue(Visitor visitor);
     void removeVisitorFromQueue(Visitor visitor);
