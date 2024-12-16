@@ -1,4 +1,4 @@
-// 文件路径: src/Visitor.java
+
 public class Visitor extends Person {
     private String ticketNumber;
     private String membershipLevel;
@@ -13,7 +13,7 @@ public class Visitor extends Person {
         this.membershipLevel = membershipLevel;
     }
 
-    // Getters and Setters
+
     public String getTicketNumber() {
         return ticketNumber;
     }
