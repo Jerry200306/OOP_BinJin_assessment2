@@ -1,4 +1,4 @@
-// 文件路径: src/Ride.java
+
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Iterator;
@@ -12,10 +12,10 @@ public class Ride implements RideInterface {
     private String rideName;
     private int capacity;
     private Employee operator;
-    private Queue<Visitor> queue; // 用于存储等待的游客
-    protected LinkedList<Visitor> history; // 用于存储已经乘坐的游客
-    private int maxRider; // 每次运行可以乘坐的游客数量
-    private int numOfCycles; // 运行次数
+    private Queue<Visitor> queue; 
+    protected LinkedList<Visitor> history; 
+    private int maxRider; 
+    private int numOfCycles; 
 
     public Ride() {
         this.queue = new LinkedList<>();
@@ -29,7 +29,7 @@ public class Ride implements RideInterface {
         this.operator = operator;
     }
 
-    // 实现RideInterface接口中的方法
+ 
     @Override
     public void addVisitorToQueue(Visitor visitor) {
         if (visitor != null) {
@@ -74,12 +74,12 @@ public class Ride implements RideInterface {
         }
         int ridersThisCycle = Math.min(this.maxRider, this.queue.size());
         for (int i = 0; i < ridersThisCycle; i++) {
-            Visitor visitor = this.queue.poll(); // 移除队列中的游客
+            Visitor visitor = this.queue.poll(); 
             if (visitor != null) {
-                this.history.add(visitor); // 添加到历史记录
+                this.history.add(visitor); 
             }
         }
-        this.numOfCycles++; // 增加运行次数
+        this.numOfCycles++; 
         System.out.println(ridersThisCycle + " visitors have taken the ride. Total cycles run: " + this.numOfCycles);
     }
 
@@ -160,9 +160,9 @@ public class Ride implements RideInterface {
             System.out.println("An error occurred while reading the file: " + e.getMessage());
         }
     }
-    // 其他RideInterface接口方法的实现...
 
-    // Getters and Setters
+
+
     public String getRideName() {
         return rideName;
     }
